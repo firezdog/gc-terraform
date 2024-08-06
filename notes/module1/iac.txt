@@ -1,0 +1,39 @@
+define, provision, manage infrastructure in code
+    no system admins
+declare end-state, iac does the rest
+devops
+    developers and operation teams collab
+    automate software delivery
+problems iac solves
+    manage envs / businesses
+        1. rapid scaling
+        2. operational bottlenecks (managing infrastructure)
+        3. feedback loops / audits of infrastructure changes
+        4. human and manual error
+benefits of iac
+    declarative (as in SQL)
+        declare state and it materializes
+        example: adding production label to subnets
+        separate desired state from implementation
+    allows you to see versions and rollback instead of troubleshooting basic changes
+    version control => collaboration
+        e.g. pr to open a port
+    auditable history of infra w/ comments
+        determine how infra has evolved
+        detect drift
+    portability
+        reusable modules encapsulate conventions
+        many instances of same template for different apps / regions
+        cloud foundations toolkit
+provisioning (iac) vs. configuration management
+    iac is used for provisioning
+        create vm instance
+        frameworks that manipulate gcp apis to deploy infra to run apps
+    configuration for vm
+        os-level config, internals of a vm (packages, software)
+    example
+        launch gke cluster in google cloud
+        vs. deploying containers into cluster
+declarative vs. imperative
+    not how but what (compare css)
+    "there should be five servers" vs. "create five servers"

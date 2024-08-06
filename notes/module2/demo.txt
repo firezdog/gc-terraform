@@ -1,0 +1,21 @@
+demo of using terraform commands to create infra
+use in cloud shell (preinstalled)
+automatic auth
+
+enter terraform (validate installation)
+terraform version
+define provider
+    infra/{name}/main.tf
+    use terraform registry, copy for given provider
+
+define project / id
+execute terraform init to download plugins
+
+define resource, google compute engine
+execute terraform plan (authorize shell)
+shows summary of resources to be created
+terraform apply
+
+"known after apply" -- tbd after apply
+reject if anything seems unsafe
+use terraform destroy to get rid of resourcesq

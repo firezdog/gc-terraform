@@ -1,0 +1,5 @@
+foundational concepts
+basics of HCL
+phases, how to create config files etc.
+validation
+how to manage gc infra with terraform

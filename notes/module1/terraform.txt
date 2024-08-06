@@ -1,0 +1,39 @@
+what is terraform?
+hashicorp ias tool
+provision gcp resources with decl config files
+    virtual machines, containers, storage, networks
+uses HCL (language)
+provides plans that can be reviewed, applied, etc.
+features
+    multi-cloud / api (e.g. also aws)
+    registry
+    diff editions
+use resources blocks to define elements
+    create dependencies between resources
+standardize configurations (create modules)
+limit values using validation
+workflow
+    scope (what resources a project requires)
+        2-tier
+            web servers
+                what compute
+            database
+                what instances
+    authoring of code
+        instances, vpc network
+        config files
+        (var, main, tf vars)
+    init (install plugins / modules)
+        terraform init
+    plan
+        execution plan for resources to be created, changed, destroyed
+    apply after review
+use cases
+    manage infrastructure
+        immutability (only via code)
+    track changes
+        approval
+    generation of state files (what is the state of current infra)
+    automate changes based on desired end state
+    standardize configs (modules)
+        enforcement of types of policies to be used

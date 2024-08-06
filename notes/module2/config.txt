@@ -1,0 +1,24 @@
+workflow + language
+how do phases transform code to resources
+author
+    writing code in .tf
+    create dir for config
+        how to manage collection of infra
+    root module + child modules
+        variables, outputs, providers
+        best practice: logical separation into diff files
+    root module
+        where commands are run
+        plan based on the tf files found
+HCL
+    <block type> "<block label>" "<block label>" {
+        <identifier> = <expression> 
+    }
+no control loops, statements
+blocks -- resources, variables, outputs
+blocks can be nested
+arguments
+assignment of values to identifiers
+comments (#)
+
+blocks define end states, order does not matter

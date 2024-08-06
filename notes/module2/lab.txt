@@ -1,0 +1,7 @@
+use terraform to create, update, destroy gc resources
+use google cloud provider
+create vm without network
+add network
+update instance
+add tags, edit machine type
+destroy

@@ -1,0 +1,34 @@
+init
+    initialize
+    first command to run after creating / checking out config
+        ensures plugins are downloaded (like npm install?)
+        provider block, source
+            each is a binary that is downloaded / installed
+        => .terraform
+plan
+    preview
+    what resources will be created, modified, destroyed by an "apply"
+    compares def with state
+    allows you to validate the behavior of apply
+    you can pass the results to apply
+apply
+    creates resources
+    -/+ destroy and create
+    ~ update in place
+    - destroy
+    waits for approval
+    may fail w/ error message
+    determines order of destruction (dependencies first e.g.)
+destroy
+    remove
+    apply "in reverse"
+    manage ephemeral architecture
+    useful in lower level envs
+    will also remove data (bucket contents)
+fmt
+    autoformat
+    best practices
+        meta argument first separated by spaces
+        align values
+        separate blocks
+        fmt will apply these

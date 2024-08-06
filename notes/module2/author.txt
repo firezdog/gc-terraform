@@ -1,0 +1,30 @@
+resource: defines infra components
+    resource "resource_type" "resource_name" {
+        # resource args
+    }
+    "resource" keyword
+example: storage bucket + compute instance
+providers implement resource types
+    providers.tf specifies what providers will be used
+    expose apis as terraform resources, manage interactions
+    configs belong in root module
+    each providers has source and version
+        version is optional (prevent breaking changes)
+        use of most recent if no version
+    each provider is then configured in another block
+variables parameterize config
+    inputs for customization
+    values set at runtime (env, cli, etc.)
+        variables <=> tfvars
+    outputs.tf -- output values
+        computed attributes
+        listed after apply
+    tfstate
+        saved state
+        can be stored locally or remotely
+        created / updated automatically
+    module
+        config files in single directory
+        primary method of code reuse
+        specify source from which code is retrieved (local / remote)
+            use of module registry or creation of bespoke

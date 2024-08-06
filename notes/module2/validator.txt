@@ -1,0 +1,15 @@
+enforce policy compliance
+mitigate config errors (security and governance violations)
+shift to IaC => increasing significance of errors
+    also compliance e.g. which region data can be created in
+constraints
+"gcloud beta terraform vet"
+    compliance as part of cicd pipeline
+    detect policy violations
+    != terraform validate
+        used to test syntax / structure without deploying
+        vs. ensuring config satisfies constraints
+use cases
+    add guardrails to ci/cd to ensure requests are validated before deployment
+        indicate which policies were violated
+    application teams can validate against policy libraries to ensure compliance

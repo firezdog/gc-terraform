@@ -1,0 +1,30 @@
+write config files
+terraform => exec plan
+executes ^
+determine changes and create incremental plans
+editions
+    community (public)
+        local
+        nonconcurrent
+        no version control
+    terraform cloud
+        collaborative
+        concurrent deployment
+    enterprise
+        hosted on premises
+        high overhead
+    installed on cloud shell, can be installed locally
+gcp requires authentication to use
+    cloud shell: preauthenticated
+    or authenticate with cloud sdk
+    configured on vm
+    use google cloud service account
+        use json keyfile
+        short lived keys
+example
+    create vpc network
+    create .tf config file
+    google cloud as provider, terraform init
+    add code to create instance
+    run terraform plan / apply
+    new vpc network results
